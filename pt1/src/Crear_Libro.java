@@ -32,4 +32,23 @@ class Libro {
     this.copias = copias;
     }
 
+    //llamar a los private y crearlos :v
+    public String getTitulo(){
+        return titulo;
+    }
+    public String getAutor(){
+        return autor;
+    }
+    public String getIsbn(){
+        return isbn;
+    }
+    public String getGenero(){
+        return genero;
+    }
+    public int getAño(){
+        return año;
+    }
+    public int getCopias(){
+        return copias;
+    }
 }
