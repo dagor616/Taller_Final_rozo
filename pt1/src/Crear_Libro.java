@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import javax.swing.JOptionPane;
 
 public class Crear_Libro {
 
@@ -9,6 +10,16 @@ public class Crear_Libro {
 
     public static void main(String[] args){
 
+        crearLibro();
+
+    }
+
+    //  crear  libro
+    public static void crearLibro() {
+        String titulo = JOptionPane.showInputDialog("Ingrese el titulo del libro");
+        if (titulo == null || titulo.trim().isEmpty()){
+            JOptionPane.showMessageDialog(null,"ERROR,ingrese un titulo");
+        }
     }
 
 }
@@ -22,32 +33,38 @@ class Libro {
     private String genero;
     private int año;
     private int copias;
-//constructor libro
+
+    // constructor libro
     public Libro(String titulo, String autor, String isbn, String genero, int año, int copias){
-    this.titulo = titulo;
-    this.autor = autor;
-    this.isbn = isbn;
-    this.genero = genero;
-    this.año = año;
-    this.copias = copias;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.isbn = isbn;
+        this.genero = genero;
+        this.año = año;
+        this.copias = copias;
     }
 
-    //llamar a los private y crearlos :v
+    // getter
     public String getTitulo(){
         return titulo;
     }
+
     public String getAutor(){
         return autor;
     }
+
     public String getIsbn(){
         return isbn;
     }
+
     public String getGenero(){
         return genero;
     }
+
     public int getAño(){
         return año;
     }
+
     public int getCopias(){
         return copias;
     }
