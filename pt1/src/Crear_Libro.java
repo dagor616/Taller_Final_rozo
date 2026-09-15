@@ -42,7 +42,39 @@ public class Crear_Libro {
             JOptionPane.showMessageDialog(null,"ERROR, ingrese un genero");
         return;
         }
+        String añoTexto = JOptionPane.showInputDialog("Ingrese el año de publicación");
 
+        int año;
+// try es para que intente el codigo leer de numero a letras sin que salga error
+        try {
+            año = Integer.parseInt(añoTexto);
+            //catch es si falla  y mande el mensaje
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "ERROR, ingrese un año válido");
+            return;
+        }
+
+        int añoActual = java.time.Year.now().getValue();
+
+        if (año > añoActual) {
+            JOptionPane.showMessageDialog(null, "ERROR, el año no puede ser mayor al año actual");
+            return;
+        }
+        String copiasTexto = JOptionPane.showInputDialog("Ingrese las copias disponibles");
+
+        int copias;
+
+        try {
+            copias = Integer.parseInt(copiasTexto);
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(null, "ERROR, ingrese un número válido");
+            return;
+        }
+
+        if (copias < 0) {
+            JOptionPane.showMessageDialog(null, "ERROR, las copias no pueden ser menores que 0");
+            return;
+        }
     }
 
 }
