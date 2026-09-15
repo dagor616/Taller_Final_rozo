@@ -18,7 +18,24 @@ public class Crear_Libro {
     public static void crearLibro() {
         String titulo = JOptionPane.showInputDialog("Ingrese el titulo del libro");
         if (titulo == null || titulo.trim().isEmpty()){
-            JOptionPane.showMessageDialog(null,"ERROR,ingrese un titulo");
+            JOptionPane.showMessageDialog(null,"ERROR, ingrese un titulo");
+            return;
+        }
+        String autor = JOptionPane.showInputDialog("Ingrese el autor del libro");
+        if (autor == null || autor.trim().isEmpty()){
+            JOptionPane.showMessageDialog(null, "ERROR, ingrese un autor");
+            return;
+        }
+        String isbn = JOptionPane.showInputDialog("Ingrese el ISBN del libro");
+
+        if (isbn == null || isbn.trim().isEmpty()){
+            JOptionPane.showMessageDialog(null, "ERROR, ingrese un ISBN");
+            return;
+        }
+
+        if (librosPorISBN.containsKey(isbn)){
+            JOptionPane.showMessageDialog(null, "ERROR, ese ISBN ya existe");
+            return;
         }
     }
 
