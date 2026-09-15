@@ -37,6 +37,12 @@ public class Crear_Libro {
             JOptionPane.showMessageDialog(null, "ERROR, ese ISBN ya existe");
             return;
         }
+        String genero = JOptionPane.showInputDialog("Ingrese el genero del libro");
+        if (genero == null || genero.trim() .isEmpty()){
+            JOptionPane.showMessageDialog(null,"ERROR, ingrese un genero");
+        return;
+        }
+
     }
 
 }
