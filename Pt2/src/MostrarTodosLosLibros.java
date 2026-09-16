@@ -12,4 +12,8 @@ public class MostrarTodosLosLibros {
     public void agregarLibro(Libro libro) {
         libros.add(libro);
     }
+    // Obtener todos los libros
+    public ArrayList<Libro> obtenerTodos() {
+        return libros;
+    }
 }
