@@ -75,6 +75,16 @@ public class Crear_Libro {
             JOptionPane.showMessageDialog(null, "ERROR, las copias no pueden ser menores que 0");
             return;
         }
+        // crear el libro
+        Libro nuevoLibro = new Libro(titulo, autor, isbn, genero, año, copias);
+
+        // guardar el libro en el ArrayList
+        libros.add(nuevoLibro);
+
+        // g    uardar el libro en el HashMap usando el ISBN
+        librosPorISBN.put(isbn, nuevoLibro);
+
+        JOptionPane.showMessageDialog(null, "Libro creado correctamente");
     }
 
 }
