@@ -1,10 +1,24 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-# Editor-based HTTP Client requests
-/httpRequests/
-# Ignored default folder with query files
-/queries/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
+# Compilación de Java
+*.class
+bin/
+out/
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+.nb-gradle/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
