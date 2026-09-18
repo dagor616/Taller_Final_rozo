@@ -1,29 +1,54 @@
-# Sistema de Gestión de Biblioteca
+# Sistema de Biblioteca
 
-## Propósito
+## Propósito del proyecto
 
-Aplicación de escritorio para gestionar los libros de una biblioteca. Permite registrar, visualizar, filtrar y eliminar libros.
+Este proyecto consiste en una aplicación de gestión de biblioteca desarrollada en Java. Permite registrar libros, consultar todos los libros, buscar libros por autor y eliminar libros mediante su ISBN.
+
+La aplicación utiliza interfaces gráficas con JOptionPane y mantiene los libros registrados durante la ejecución del programa.
 
 ## Integrantes
 
-* DYLAN: Crear libros.
-* JUAN PABLO:** Mostrar todos los libros.
-* MAURO CELAYA:** Filtrar por autor y eliminar libros.
+- Dylan Felipe Perez Villa
+- Juan Pablo
+- Mauro
 
 ## Funcionalidades
 
-1. **Crear libros:** permite registrar un libro mediante un formulario con datos como título, autor, ISBN o código, género y año de publicación. Valida que los campos obligatorios no estén vacíos.
+1. Crear libro
+2. Mostrar todos los libros
+3. Filtrar libros por autor
+4. Eliminar libro
+5. Salir de la aplicación
 
-2. **Mostrar todos los libros:** muestra en un listado todos los libros registrados en la biblioteca.
+## Estructura del proyecto
 
-3. **Filtrar por autor:** permite buscar libros por autor y mostrar únicamente los que correspondan a la búsqueda.
+- `pt1/src/Crear_Libro.java` — Registro de libros.
+- `Pt2/src/MostrarTodosLosLibros.java` — Muestra todos los libros registrados.
+- `parte3/src/FiltrarPorAutor.java` — Busca libros por autor.
+- `parte4/src/EliminarLibro.java` — Elimina libros mediante ISBN.
+- `parte4/src/MainBiblioteca.java` — Menú principal de la aplicación.
 
-4. **Eliminar libros:** permite seleccionar un libro y eliminarlo de la colección, actualizando el listado inmediatamente.
+## Requisitos
+
+- Java JDK instalado.
+- IntelliJ IDEA u otro entorno compatible con proyectos Java.
+
+## Cómo compilar
+
+Abrir el proyecto en IntelliJ IDEA y asegurarse de que las carpetas `src` de las diferentes partes estén configuradas como fuentes del proyecto.
+
+También se puede compilar utilizando las herramientas de compilación de Java.
 
 ## Cómo ejecutar
 
-1. Abrir el proyecto en **IntelliJ IDEA**.
-2. Verificar que esté configurado un **JDK**.
-3. Buscar la clase principal que contiene el método `main`.
-4. Ejecutar la clase con **Run**.
-5. La aplicación se abrirá y podrá utilizarse para gestionar los libros.
+Abrir la clase:
+
+`MainBiblioteca.java`
+
+y ejecutar su método `main`.
+
+Desde el menú principal se puede acceder a las cuatro funcionalidades de la aplicación.
+
+## Nota
+
+Los libros registrados se mantienen en memoria mientras la aplicación está en ejecución. Al cerrar el programa, los datos registrados se pierden.
