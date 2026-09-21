@@ -8,9 +8,9 @@ La aplicación utiliza interfaces gráficas con JOptionPane y mantiene los libro
 
 ## Integrantes
 
-- Dylan Felipe Perez Villa
-- Juan Pablo
-- Mauro
+* Dylan Felipe Perez Villa
+* Juan Pablo
+* Mauro
 
 ## Funcionalidades
 
@@ -22,20 +22,24 @@ La aplicación utiliza interfaces gráficas con JOptionPane y mantiene los libro
 
 ## Estructura del proyecto
 
-- `pt1/src/Crear_Libro.java` — Registro de libros.
-- `Pt2/src/MostrarTodosLosLibros.java` — Muestra todos los libros registrados.
-- `parte3/src/FiltrarPorAutor.java` — Busca libros por autor.
-- `parte4/src/EliminarLibro.java` — Elimina libros mediante ISBN.
-- `parte4/src/MainBiblioteca.java` — Menú principal de la aplicación.
+El proyecto utiliza una única carpeta `src` que contiene las clases principales de la aplicación:
+
+* `src/Crear_Libro.java` — Registra nuevos libros y valida sus datos.
+* `src/MostrarTodosLosLibros.java` — Muestra todos los libros registrados.
+* `src/FiltrarPorAutor.java` — Permite buscar libros por autor.
+* `src/EliminarLibro.java` — Permite eliminar libros mediante su ISBN.
+* `src/MainBiblioteca.java` — Contiene el menú principal de la aplicación.
+* `src/MainFiltrarPorAutor.java` — Ejecuta la funcionalidad de filtrado por autor.
+* `src/MainEliminarLibro.java` — Ejecuta la funcionalidad de eliminación de libros.
 
 ## Requisitos
 
-- Java JDK instalado.
-- IntelliJ IDEA u otro entorno compatible con proyectos Java.
+* Java JDK 26.
+* IntelliJ IDEA u otro entorno compatible con proyectos Java.
 
 ## Cómo compilar
 
-Abrir el proyecto en IntelliJ IDEA y asegurarse de que las carpetas `src` de las diferentes partes estén configuradas como fuentes del proyecto.
+Abrir el proyecto en IntelliJ IDEA y asegurarse de que la carpeta `src` esté configurada como fuente del proyecto.
 
 También se puede compilar utilizando las herramientas de compilación de Java.
 
@@ -47,8 +51,9 @@ Abrir la clase:
 
 y ejecutar su método `main`.
 
-Desde el menú principal se puede acceder a las cuatro funcionalidades de la aplicación.
+Desde el menú principal se puede acceder a las funcionalidades de la aplicación.
 
 ## Nota
 
 Los libros registrados se mantienen en memoria mientras la aplicación está en ejecución. Al cerrar el programa, los datos registrados se pierden.
+
